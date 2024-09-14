@@ -8,7 +8,6 @@
 
 <p align="left"> <a href="https://twitter.com/anirbanbiswas69" target="blank"><img src="https://img.shields.io/twitter/follow/anirbanbiswas69?logo=twitter&style=for-the-badge" alt="anirbanbiswas69" /></a> </p>
 
-<h3 align="center">A passionate frontend developer from India</h3>
 
 - 👯 I’m looking to collaborate on **Hirrd**
 
