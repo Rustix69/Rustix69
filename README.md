@@ -18,7 +18,7 @@
 
 - 💬 Ask me about **Web3, MERN, DSA**
 
-- 📫 How to reach me **a@gmail**
+- 📫 How to reach me **competitivecoder69@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
