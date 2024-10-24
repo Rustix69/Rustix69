@@ -1,4 +1,3 @@
-![MasterHead](https://scontent.fccu5-1.fna.fbcdn.net/v/t1.6435-9/182710268_309964030586465_8018982355126132831_n.jpg?stp=dst-jpg_s960x960&_nc_cat=103&ccb=1-7&_nc_sid=2285d6&_nc_ohc=-opRrG6QvGIQ7kNvgEiVDby&_nc_ht=scontent.fccu5-1.fna&_nc_gid=APvwyYB6tsUW-p_7TVp-3Qi&oh=00_AYA6A8NvVgcU9AwGfv9AhHMQdJBOTvq2asR_-P74fEDtcA&oe=670CB971)
 <h1 align="center">Hi 👋, I'm Anirban</h1>
 <h3 align="center">A passionate Rust Developer from India</h3>
 
