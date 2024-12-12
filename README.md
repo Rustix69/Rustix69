@@ -8,9 +8,9 @@
 <p align="left"> <a href="https://linkedin.com/in/anir1604" target="blank"><img src="https://img.shields.io/twitter/follow/anirban biswas?logo=twitter&style=for-the-badge" alt="anirban1604" /></a> </p>
 
 
-- 👯 I’m looking to collaborate on **Hirrd**
+- 👯 I’m looking to collaborate on **Vakil.ai**
 
-- 🌱 I’m currently learning **Data Structures and Algorithm**
+- 🌱 I’m currently learning **Expert @CodeForces**
 
 - 🔭 I’m currently working on **BlockChain and CyberSecurity**
 
