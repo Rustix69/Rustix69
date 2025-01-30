@@ -10,7 +10,7 @@
 
 - 👯 I’m looking to collaborate on **Vakil.ai**
 
-- 🌱 I’m currently learning **Expert @CodeForces**
+- 🌱 I’m currently **Expert @CodeForces**
 
 - 🔭 I’m currently working on **BlockChain and CyberSecurity**
 
