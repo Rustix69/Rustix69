@@ -7,17 +7,6 @@
 
 <p align="left"> <a href="https://linkedin.com/in/anir1604" target="blank"><img src="https://img.shields.io/twitter/follow/anirban biswas?logo=twitter&style=for-the-badge" alt="anirban1604" /></a> </p>
 
-
-- 👯 I’m currently working at **Alchemyst AI** in Founding Team
-
-- 👯 I’m currently working at **BQ Labs** as an Intern.
-
-- 👯 I’m currently working at **Modus AI** as an Intern.
-
-- 👯 I’m currently working at **Quant Insider** as an Intern.
-
-- 🌱 I’m currently **Expert @CodeForces** and learning **Blockchains**.
-
-- 💬 Ask me about **Web3, MERN, DSA**
+- A 20 Yr boy exploring coding and trading.
 
 - 📫 How to reach me **competitivecoder69@gmail.com**
