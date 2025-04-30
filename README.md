@@ -10,6 +10,10 @@
 
 - 👯 I’m currently working at **Alchemyst AI** in Founding Team
 
+- 👯 I’m currently working at **BQ Labs** as an Intern.
+
+- 👯 I’m currently working at **Modus AI** as an Intern.
+
 - 👯 I’m currently working at **Quant Insider** as an Intern.
 
 - 🌱 I’m currently **Expert @CodeForces** and learning **Blockchains**.
