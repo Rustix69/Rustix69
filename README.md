@@ -7,6 +7,6 @@
 
 <p align="left"> <a href="https://linkedin.com/in/anir1604" target="blank"><img src="https://img.shields.io/twitter/follow/anirban biswas?logo=twitter&style=for-the-badge" alt="anirban1604" /></a> </p>
 
-- A 20 Yr boy exploring coding and trading.
+- A 20 Yr boy exploring Coding and Trading.
 
-- 📫 How to reach me **competitivecoder69@gmail.com**
+- How to reach me **competitivecoder69@gmail.com**
