@@ -19,17 +19,16 @@
 
 
 
-<p align="start">
-  <img src="https://img.shields.io/badge/Codeforces-Expert%20(1600%2B)-1f75fe?style=for-the-badge&logo=codeforces&logoColor=white" />
-</p>
+<div align="start" style="display: flex; flex-direction: column; gap: 6px; align-items: center;">
 
-<p align="start">
+  <img src="https://img.shields.io/badge/Codeforces-Expert%20(1600%2B)-1f75fe?style=for-the-badge&logo=codeforces&logoColor=white" />
+
   <a href="https://rustix.in" target="_blank">
     <img src="https://img.shields.io/badge/🌐 Visit%20My%20Website-rustix.in-blue?style=for-the-badge" />
   </a>
-</p>
 
-<p align="start">
   <img src="https://img.shields.io/badge/Summer%20of%20Bitcoin-2025%20Candidate-F7931A?style=for-the-badge&logo=bitcoin&logoColor=white" />
-</p>
+
+</div>
+
 
