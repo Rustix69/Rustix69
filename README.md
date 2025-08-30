@@ -18,7 +18,11 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" width="20" height="20" align="center" /> ***Summer of Bitcoin 2025 Candidate***  
 
 
-<img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="20" height="20" align="center" /> **Reach me at**: ***competitivecoder69@gmail.com***
+<p>
+  <a href="https://rustix.in" target="_blank">
+    <img src="https://img.shields.io/badge/🌐 Visit%20My%20Website-rustix.in-blue?style=for-the-badge" />
+  </a>
+</p>
 
 
 <p align="start">
