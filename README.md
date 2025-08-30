@@ -1,12 +1,27 @@
 <h1 align="center">Hi 👋, I'm Anirban</h1>
-<h3 align="center">A passionate Rust Developer from India</h3>
+<h3 align="center">Building JURIS IQ | Rust Dev | Funded Trader 165k+</h3>
 
-<img align="right" alt="Coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif">
+<img align="right" width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/90817003-6a1a-4f5c-87ce-336feed78fcb" />
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=anir1604&label=Profile%20views&color=0e75b6&style=flat" alt="anir1604" /> </p>
 
-<p align="left"> <a href="https://linkedin.com/in/anir1604" target="blank"><img src="https://img.shields.io/twitter/follow/anirban biswas?logo=twitter&style=for-the-badge" alt="anirban1604" /></a> </p>
 
-- A 20 Yr boy exploring Coding and Trading.
+</br>
 
-- How to reach me **competitivecoder69@gmail.com**
+### About Me  
+
+**21 Yr boy exploring Coding and Trading**  
+
+
+<img src="https://cdn.iconscout.com/icon/free/png-256/free-codeforces-3521352-2944796.png" width="20" height="20" align="center" /> ***Expert @Codeforces (1600+)***  
+
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" width="20" height="20" align="center" /> ***Summer of Bitcoin 2025 Candidate***  
+
+
+<img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="20" height="20" align="center" /> **Reach me at**: ***competitivecoder69@gmail.com***
+
+
+<p align="start">
+  <img src="https://img.shields.io/badge/Codeforces-Expert%20(1600%2B)-1f75fe?style=for-the-badge&logo=codeforces&logoColor=white" />
+  <img src="https://img.shields.io/badge/Summer%20of%20Bitcoin-2025%20Candidate-F7931A?style=for-the-badge&logo=bitcoin&logoColor=white" />
+</p>
