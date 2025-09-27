@@ -9,7 +9,7 @@
 
 ***21 Yr boy exploring Coding and Trading*** 
 
-<img src="https://cdn.iconscout.com/icon/free/png-256/free-codeforces-3521352-2944796.png" width="20" height="20" align="center" /> ***Expert @Codeforces (1600+)***  
+<img src="https://cdn.iconscout.com/icon/free/png-256/free-codeforces-3521352-2944796.png" width="20" height="20" align="center" /> ***Expert @Codeforces (1700+)***  
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" width="20" height="20" align="center" /> ***Summer of Bitcoin 2025 Candidate***  
 
