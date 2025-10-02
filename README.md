@@ -16,7 +16,7 @@
 
 <div align="start" style="display: flex; flex-direction: column; gap: 6px;">
 
-  <img src="https://img.shields.io/badge/Codeforces-Expert%20(1600%2B)-1f75fe?style=for-the-badge&logo=codeforces&logoColor=white" />
+  <img src="https://img.shields.io/badge/Codeforces-Expert%20(1700%2B)-1f75fe?style=for-the-badge&logo=codeforces&logoColor=white" />
 
   <img src="https://img.shields.io/badge/Summer%20of%20Bitcoin-2025%20Candidate-F7931A?style=for-the-badge&logo=bitcoin&logoColor=white" />
 
