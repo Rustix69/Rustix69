@@ -4,8 +4,6 @@
 
 </br>
 
-### About Me  :)
-
 ***21 Yr boy exploring Coding and Trading*** 
 
 <img src="https://cdn.iconscout.com/icon/free/png-256/free-codeforces-3521352-2944796.png" width="20" height="20" align="center" /> ***Expert @Codeforces (1700+)***  
