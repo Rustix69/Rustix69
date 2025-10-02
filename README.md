@@ -1,5 +1,4 @@
-<h1 align="center">Hi 👋, I'm Anirban</h1>
-<h3 align="center">Building JURIS IQ | Rust Dev | Funded Trader 165k+</h3>
+<h1 align="center">Hi 👋, I'm Rustix</h1>
 
 <!-- <img align="right" width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/90817003-6a1a-4f5c-87ce-336feed78fcb" /> -->
 
