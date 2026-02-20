@@ -8,7 +8,7 @@
 
 <img src="https://cdn.iconscout.com/icon/free/png-256/free-codeforces-3521352-2944796.png" width="20" height="20" align="center" /> ***Expert @Codeforces (1700+)***  
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" width="20" height="20" align="center" /> ***Summer of Bitcoin 2025 Candidate***  
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" width="20" height="20" align="center" /> ***Summer of Bitcoin 2025***  
 
 <img src="https://cdn-icons-png.flaticon.com/512/2991/2991108.png" width="20" height="20" align="center" /> ***Founder @Resume AI (150k+ Users)***  
 
