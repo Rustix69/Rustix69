@@ -102,6 +102,9 @@
     <text class="key" x="20" y="477">Competitive Programming:</text>
     <text class="val" x="840" y="477" text-anchor="end">Codeforces Expert (1700+ Rating)</text>
 
+    <text class="key" x="20" y="477">Build:</text>
+    <text class="val" x="840" y="477" text-anchor="end">Rust-first secure system</text>
+
     <!-- Color swatches -->
     <rect x="20"  y="498" width="14" height="14" rx="2" fill="#1e1e1e" stroke="#333" stroke-width="1"/>
     <rect x="40"  y="498" width="14" height="14" rx="2" fill="#003820" stroke="#333" stroke-width="1"/>
