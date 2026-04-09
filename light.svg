@@ -1,0 +1,178 @@
+<!-- Light Mode Version -->
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="560" viewBox="0 0 860 560">
+  <defs>
+<style>
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+  @keyframes scanline { 0%{transform:translateY(-20px)} 100%{transform:translateY(580px)} }
+  @keyframes flicker { 0%,98%,100%{opacity:1} 99%{opacity:0.96} }
+
+  /* Background */
+  .bg {
+    fill: #f6f8fa;
+  }
+
+  /* ASCII / logo */
+  .ascii {
+    font-family: 'Courier New', monospace;
+    font-size: 9.5px;
+    fill: #0f6d2f; /* toned green */
+  }
+
+  /* Subtle ticker */
+  .ticker {
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+    fill: #9ca3af;
+    opacity: 0.6;
+  }
+
+  /* Tagline */
+  .tagline {
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    fill: #6b7280;
+  }
+
+  /* Cursor */
+  .cursor {
+    fill: #24292f;
+    animation: blink 1s step-end infinite;
+  }
+
+  /* Username */
+  .uname {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    fill: #24292f;
+    font-weight: bold;
+  }
+
+  /* Separator line (dots/lines) */
+  .sep {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    fill: #d1d5db;
+    letter-spacing: 1px;
+  }
+
+  /* LEFT SIDE LABELS (orange like your screenshot) */
+  .key {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    fill: #b45309; /* perfect warm orange */
+  }
+
+  /* RIGHT SIDE VALUES (deep blue like screenshot) */
+  .val {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    fill: #1e3a8a; /* deep terminal blue */
+  }
+
+  /* Section headers */
+  .section {
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    fill: #6b7280;
+  }
+
+  /* Card animation */
+  .card {
+    animation: flicker 8s infinite;
+  }
+
+  /* Scanline effect (very subtle for light mode) */
+  .scan {
+    fill: none;
+    stroke: rgba(0,0,0,0.04);
+    stroke-width: 2;
+    animation: scanline 4s linear infinite;
+  }
+</style>
+  </defs>
+
+  <rect width="860" height="560" rx="12" class="bg"/>
+  <line x1="0" y1="0" x2="860" y2="0" class="scan"/>
+
+  <g class="card">
+
+    <!-- Header SVG preserved -->
+    <g transform="translate(0,10)">
+      <rect x="0" y="0" width="860" height="90" fill="none"/>
+      <g transform="translate(380,5) scale(0.25)">
+        <path fill="#0a7f2e" d="M378.625,209.465c-6.531-38.344-13.672-80-15.844-91.844c-5.313-28.906-43.375-45.063-71.656-24.234
+        c-14.828,10.938-28.094,11.719-35.125,11.719s-14.828,1.563-35.125-11.719c-29.391-19.219-66.344-4.672-71.656,24.234
+        c-2.172,11.844-9.313,53.5-15.844,91.844C53.906,219.418,0,238.778,0,261.012c0,32.438,114.625,58.719,256,58.719
+        c141.391,0,256-26.281,256-58.719C512,238.778,458.094,219.418,378.625,209.465z"/>
+      </g>
+    </g>
+
+    <text class="tagline" x="20" y="120">&gt;root@rustix ~ ... security_researcher &amp; protocol_breaker &amp; founding_engineer</text>
+
+    <text class="uname" x="20" y="143">anirban@rustix</text>
+    <text class="sep" x="155" y="143">────────────────────────────────────────────────────────────</text>
+
+    <text class="key" x="20" y="165">OS:</text>
+    <text class="val" x="840" y="165" text-anchor="end">Windows 11, Arch Linux, Ubuntu</text>
+
+    <text class="key" x="20" y="183">IDE:</text>
+    <text class="val" x="840" y="183" text-anchor="end">VIM, VS Code, Cursor</text>
+
+    <text class="key" x="20" y="201">Shell:</text>
+    <text class="val" x="840" y="201" text-anchor="end">zsh + tmux</text>
+
+    <text class="key" x="20" y="225">Languages.<tspan class="key">Programming</tspan>:</text>
+    <text class="val" x="840" y="225" text-anchor="end">Rust, TypeScript, C++</text>
+
+    <text class="key" x="20" y="243">Languages.<tspan class="key">Computer</tspan>:</text>
+    <text class="val" x="840" y="243" text-anchor="end">JSON, LaTeX, YAML, TOML, Regex, PCAP</text>
+
+    <text class="key" x="20" y="267">Hobbies.<tspan class="key">Software</tspan>:</text>
+    <text class="val" x="840" y="267" text-anchor="end">Quid Pro Quo, Tailgating, ARP Spoofing, DNS Tunneling</text>
+
+    <text class="key" x="20" y="285">Hobbies.<tspan class="key">Hardware</tspan>:</text>
+    <text class="val" x="840" y="285" text-anchor="end">Wireless Network Auditing, USB Keystroke Injection</text>
+
+    <text class="section" x="20" y="307">─ Contact ─────────────────────────────────────────────</text>
+
+    <text class="key" x="20" y="327">Email:</text>
+    <text class="val" x="840" y="327" text-anchor="end">anirbanbiswas04577@gmail.com</text>
+
+    <text class="key" x="20" y="345">Email.<tspan class="key">Work</tspan>:</text>
+    <text class="val" x="840" y="345" text-anchor="end">anirban@jurisiq.in</text>
+
+    <text class="key" x="20" y="363">LinkedIn:</text>
+    <text class="val" x="840" y="363" text-anchor="end">Rustix069</text>
+
+    <text class="key" x="20" y="381">Twitter:</text>
+    <text class="val" x="840" y="381" text-anchor="end">Rustix69</text>
+
+    <text class="key" x="20" y="399">Profile:</text>
+    <text class="val" x="840" y="399" text-anchor="end">www.rustix.in</text>
+
+    <text class="section" x="20" y="421">─ Stats ─────────────────────────────────────────────</text>
+
+    <text class="key" x="20" y="441">Role:</text>
+    <text class="val" x="840" y="441" text-anchor="end">4x Founding Engineer, AI Startups</text>
+
+    <text class="key" x="20" y="459">Contributed:</text>
+    <text class="val" x="840" y="459" text-anchor="end">Summer of Bitcoin 2025, 2026</text>
+
+    <text class="key" x="20" y="477">Competitive Programming:</text>
+    <text class="val" x="840" y="477" text-anchor="end">Codeforces Expert (1700+ Rating)</text>
+
+    <text class="key" x="20" y="477">Build:</text>
+    <text class="val" x="840" y="477" text-anchor="end">Rust-first secure system</text>
+
+    <!-- Light palette -->
+    <rect x="20"  y="498" width="14" height="14" rx="2" fill="#ffffff" stroke="#d0d7de"/>
+    <rect x="40"  y="498" width="14" height="14" rx="2" fill="#ddf4ff" stroke="#d0d7de"/>
+    <rect x="60"  y="498" width="14" height="14" rx="2" fill="#dafbe1" stroke="#d0d7de"/>
+    <rect x="80"  y="498" width="14" height="14" rx="2" fill="#aff5b4" stroke="#d0d7de"/>
+    <rect x="100" y="498" width="14" height="14" rx="2" fill="#0969da" stroke="#d0d7de"/>
+    <rect x="120" y="498" width="14" height="14" rx="2" fill="#bf8700" stroke="#d0d7de"/>
+    <rect x="140" y="498" width="14" height="14" rx="2" fill="#8250df" stroke="#d0d7de"/>
+    <rect x="160" y="498" width="14" height="14" rx="2" fill="#24292f" stroke="#d0d7de"/>
+
+  </g>
+</svg>
