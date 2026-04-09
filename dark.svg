@@ -1,109 +1,116 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="480" viewBox="0 0 860 480">
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="560" viewBox="0 0 860 560">
   <defs>
     <style>
-      @keyframes scanline {
-        0% { transform: translateY(-20px); }
-        100% { transform: translateY(500px); }
-      }
-
-      @keyframes flicker {
-        0%,98%,100% { opacity: 1; }
-        99% { opacity: 0.88; }
-      }
-
-      .bg { fill: #0d1117; }
-
-      .tagline {
-        font-family: monospace;
-        font-size: 13px;
-        fill: #1a7f37;
-      }
-
-      .uname { font-family: monospace; font-size: 13px; fill: #58a6ff; font-weight: bold; }
-      .sep { font-family: monospace; font-size: 13px; fill: #444d56; }
-      .key { font-family: monospace; font-size: 13px; fill: #953800; }
-      .val { font-family: monospace; font-size: 13px; fill: #0a84ff; }
-      .section { font-family: monospace; font-size: 12px; fill: #444d56; }
-
-      .card { animation: flicker 8s infinite; }
-      .scan { fill: none; stroke: rgba(57,255,20,0.06); stroke-width: 2; animation: scanline 4s linear infinite; }
+      @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+      @keyframes scanline { 0%{transform:translateY(-20px)} 100%{transform:translateY(580px)} }
+      @keyframes flicker { 0%,98%,100%{opacity:1} 99%{opacity:0.88} }
+      .bg      { fill: #0d1117; }
+      .ascii   { font-family: 'Courier New', Courier, monospace; font-size: 9.5px; fill: #39ff14; }
+      .ticker  { font-family: 'Courier New', Courier, monospace; font-size: 11px; fill: #1a7f37; opacity: 0.5; }
+      .tagline { font-family: 'Courier New', Courier, monospace; font-size: 12px; fill: #1a7f37; }
+      .cursor  { fill: #39ff14; animation: blink 1s step-end infinite; }
+      .uname   { font-family: 'Courier New', Courier, monospace; font-size: 13px; fill: #58a6ff; font-weight: bold; }
+      .sep     { font-family: 'Courier New', Courier, monospace; font-size: 13px; fill: #444d56; }
+      .key     { font-family: 'Courier New', Courier, monospace; font-size: 13px; fill: #953800; }
+      .val     { font-family: 'Courier New', Courier, monospace; font-size: 13px; fill: #0a84ff; }
+      .section { font-family: 'Courier New', Courier, monospace; font-size: 12px; fill: #444d56; }
+      .card    { animation: flicker 8s infinite; }
+      .scan    { fill: none; stroke: rgba(57,255,20,0.05); stroke-width: 2; animation: scanline 4s linear infinite; }
     </style>
   </defs>
 
-  <rect width="860" height="480" rx="12" class="bg"/>
+  <rect width="860" height="560" rx="12" class="bg"/>
   <line x1="0" y1="0" x2="860" y2="0" class="scan"/>
 
   <g class="card">
 
-    <!-- TYPEWRITER LOOP -->
-    <text x="20" y="60" class="tagline">
-      <tspan>
-        <animate attributeName="textContent"
-          values="
-          &gt; Rustix;
-          &gt; I Scale Backends;
-          &gt; Building Systems That Scale;
-          &gt; Low Latency. High Throughput;
-          &gt; Rustix
-          "
-          dur="12s"
-          repeatCount="indefinite"/>
-      </tspan>
-    </text>
+    <!-- ASCII "I AM RUSTIX" header -->
+    <!-- REPLACE ONLY THE ASCII BLOCK WITH THIS -->
 
-    <!-- USER -->
-    <text class="uname" x="20" y="83">anirban@rustix</text>
-    <text class="sep" x="155" y="83">────────────────────────────────────────────────────────────</text>
+<!-- Top SVG container (keeps spacing SAME as ASCII) -->
+<g transform="translate(0,10)">
+  
+  <!-- Invisible box to preserve layout height -->
+  <rect x="0" y="0" width="860" height="90" fill="none"/>
 
-    <!-- INFO -->
-    <text class="key" x="20" y="105">OS:</text>
-    <text class="val" x="840" y="105" text-anchor="end">Windows 11, Arch Linux, Ubuntu</text>
+  <!-- Centered hacker SVG -->
+  <g transform="translate(380,5) scale(0.25)">
+    <path fill="#39ff14" d="M378.625,209.465c-6.531-38.344-13.672-80-15.844-91.844c-5.313-28.906-43.375-45.063-71.656-24.234
+    c-14.828,10.938-28.094,11.719-35.125,11.719s-14.828,1.563-35.125-11.719c-29.391-19.219-66.344-4.672-71.656,24.234
+    c-2.172,11.844-9.313,53.5-15.844,91.844C53.906,219.418,0,238.778,0,261.012c0,32.438,114.625,58.719,256,58.719
+    c141.391,0,256-26.281,256-58.719C512,238.778,458.094,219.418,378.625,209.465z"/>
+  </g>
+</g>
 
-    <text class="key" x="20" y="123">IDE:</text>
-    <text class="val" x="840" y="123" text-anchor="end">VIM, VS Code, Cursor</text>
+    <!-- Static ticker line -->
 
-    <text class="key" x="20" y="141">Shell:</text>
-    <text class="val" x="840" y="141" text-anchor="end">zsh + tmux</text>
 
-    <text class="key" x="20" y="165">Languages.<tspan class="key">Programming</tspan>:</text>
-    <text class="val" x="840" y="165" text-anchor="end">Rust, TypeScript, C++</text>
+    <!-- Tagline + cursor -->
+    <text class="tagline" x="20" y="120">&gt;root@rustix ~ ... security_researcher &amp; protocol_breaker &amp; founding_engineer</text>
 
-    <text class="key" x="20" y="183">Languages.<tspan class="key">Computer</tspan>:</text>
-    <text class="val" x="840" y="183" text-anchor="end">JSON, LaTeX, YAML, TOML, Regex, PCAP</text>
 
-    <text class="key" x="20" y="207">Hobbies.<tspan class="key">Software</tspan>:</text>
-    <text class="val" x="840" y="207" text-anchor="end">Quid Pro Quo, Tailgating, ARP Spoofing, DNS Tunneling</text>
+    <!-- Username divider -->
+    <text class="uname" x="20" y="143">anirban@rustix</text>
+    <text class="sep"   x="155" y="143">&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</text>
 
-    <text class="key" x="20" y="225">Hobbies.<tspan class="key">Hardware</tspan>:</text>
-    <text class="val" x="840" y="225" text-anchor="end">Wireless Network Auditing, USB Keystroke Injection</text>
+    <text class="key" x="20" y="165">OS:</text>
+    <text class="val" x="840" y="165" text-anchor="end">Windows 11, Arch Linux, Ubuntu</text>
 
-    <text class="section" x="20" y="247">─ Contact ───────────────────────────────────────────────</text>
+    <text class="key" x="20" y="183">IDE:</text>
+    <text class="val" x="840" y="183" text-anchor="end">VIM, VS Code, Cursor</text>
 
-    <text class="key" x="20" y="267">Email:</text>
-    <text class="val" x="840" y="267" text-anchor="end">anirbanbiswas04577@gmail.com</text>
+    <text class="key" x="20" y="201">Shell:</text>
+    <text class="val" x="840" y="201" text-anchor="end">zsh + tmux</text>
 
-    <text class="key" x="20" y="285">Email.<tspan class="key">Work</tspan>:</text>
-    <text class="val" x="840" y="285" text-anchor="end">anirban@jurisiq.in</text>
+    <text class="key" x="20" y="225">Languages.<tspan class="key">Programming</tspan>:</text>
+    <text class="val" x="840" y="225" text-anchor="end">Rust, TypeScript, C++</text>
 
-    <text class="key" x="20" y="303">LinkedIn:</text>
-    <text class="val" x="840" y="303" text-anchor="end">Rustix069</text>
+    <text class="key" x="20" y="243">Languages.<tspan class="key">Computer</tspan>:</text>
+    <text class="val" x="840" y="243" text-anchor="end">JSON, LaTeX, YAML, TOML, Regex, PCAP</text>
 
-    <text class="key" x="20" y="321">Twitter:</text>
-    <text class="val" x="840" y="321" text-anchor="end">Rustix69</text>
+    <text class="key" x="20" y="267">Hobbies.<tspan class="key">Software</tspan>:</text>
+    <text class="val" x="840" y="267" text-anchor="end">Quid Pro Quo, Tailgating, ARP Spoofing, DNS Tunneling</text>
 
-    <text class="key" x="20" y="339">Profile:</text>
-    <text class="val" x="840" y="339" text-anchor="end">www.rustix.in</text>
+    <text class="key" x="20" y="285">Hobbies.<tspan class="key">Hardware</tspan>:</text>
+    <text class="val" x="840" y="285" text-anchor="end">Wireless Network Auditing, USB Keystroke Injection</text>
 
-    <text class="section" x="20" y="361">─ Stats ─────────────────────────────────────────────────</text>
+    <text class="section" x="20" y="307">&#x2500; Contact &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</text>
 
-    <text class="key" x="20" y="381">Role:</text>
-    <text class="val" x="840" y="381" text-anchor="end">4x Founding Engineer, AI Startups</text>
+    <text class="key" x="20" y="327">Email:</text>
+    <text class="val" x="840" y="327" text-anchor="end">anirbanbiswas04577@gmail.com</text>
 
-    <text class="key" x="20" y="399">Contributed:</text>
-    <text class="val" x="840" y="399" text-anchor="end">Summer of Bitcoin 2025, 2026</text>
+    <text class="key" x="20" y="345">Email.<tspan class="key">Work</tspan>:</text>
+    <text class="val" x="840" y="345" text-anchor="end">anirban@jurisiq.in</text>
 
-    <text class="key" x="20" y="417">Competitive Programming:</text>
-    <text class="val" x="840" y="417" text-anchor="end">Codeforces Expert (1700+ Rating)</text>
+    <text class="key" x="20" y="363">LinkedIn:</text>
+    <text class="val" x="840" y="363" text-anchor="end">Rustix069</text>
+
+    <text class="key" x="20" y="381">Twitter:</text>
+    <text class="val" x="840" y="381" text-anchor="end">Rustix69</text>
+
+    <text class="key" x="20" y="399">Profile:</text>
+    <text class="val" x="840" y="399" text-anchor="end">www.rustix.in</text>
+
+    <text class="section" x="20" y="421">&#x2500; Stats &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</text>
+
+    <text class="key" x="20" y="441">Role:</text>
+    <text class="val" x="840" y="441" text-anchor="end">4x Founding Engineer, AI Startups</text>
+
+    <text class="key" x="20" y="459">Contributed:</text>
+    <text class="val" x="840" y="459" text-anchor="end">Summer of Bitcoin 2025, 2026</text>
+
+    <text class="key" x="20" y="477">Competitive Programming:</text>
+    <text class="val" x="840" y="477" text-anchor="end">Codeforces Expert (1700+ Rating)</text>
+
+    <!-- Color swatches -->
+    <rect x="20"  y="498" width="14" height="14" rx="2" fill="#1e1e1e" stroke="#333" stroke-width="1"/>
+    <rect x="40"  y="498" width="14" height="14" rx="2" fill="#003820" stroke="#333" stroke-width="1"/>
+    <rect x="60"  y="498" width="14" height="14" rx="2" fill="#1a7f37" stroke="#333" stroke-width="1"/>
+    <rect x="80"  y="498" width="14" height="14" rx="2" fill="#39ff14" stroke="#333" stroke-width="1"/>
+    <rect x="100" y="498" width="14" height="14" rx="2" fill="#0a84ff" stroke="#333" stroke-width="1"/>
+    <rect x="120" y="498" width="14" height="14" rx="2" fill="#953800" stroke="#333" stroke-width="1"/>
+    <rect x="140" y="498" width="14" height="14" rx="2" fill="#58a6ff" stroke="#333" stroke-width="1"/>
+    <rect x="160" y="498" width="14" height="14" rx="2" fill="#e6edf3" stroke="#333" stroke-width="1"/>
 
   </g>
 </svg>
