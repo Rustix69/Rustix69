@@ -1,71 +1,109 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="520" viewBox="0 0 860 520">
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="480" viewBox="0 0 860 480">
+  <defs>
+    <style>
+      @keyframes scanline {
+        0% { transform: translateY(-20px); }
+        100% { transform: translateY(500px); }
+      }
 
-  <!-- Background -->
-  <rect width="860" height="520" rx="12" class="bg"/>
+      @keyframes flicker {
+        0%,98%,100% { opacity: 1; }
+        99% { opacity: 0.88; }
+      }
 
-  <!-- Scanline -->
+      .bg { fill: #0d1117; }
+
+      .tagline {
+        font-family: monospace;
+        font-size: 13px;
+        fill: #1a7f37;
+      }
+
+      .uname { font-family: monospace; font-size: 13px; fill: #58a6ff; font-weight: bold; }
+      .sep { font-family: monospace; font-size: 13px; fill: #444d56; }
+      .key { font-family: monospace; font-size: 13px; fill: #953800; }
+      .val { font-family: monospace; font-size: 13px; fill: #0a84ff; }
+      .section { font-family: monospace; font-size: 12px; fill: #444d56; }
+
+      .card { animation: flicker 8s infinite; }
+      .scan { fill: none; stroke: rgba(57,255,20,0.06); stroke-width: 2; animation: scanline 4s linear infinite; }
+    </style>
+  </defs>
+
+  <rect width="860" height="480" rx="12" class="bg"/>
   <line x1="0" y1="0" x2="860" y2="0" class="scan"/>
 
   <g class="card">
 
-    <!-- Tagline -->
-    <text class="tagline" x="20" y="144">&gt; security_researcher &amp; protocol_breaker &amp; founding_engineer</text>
-    <rect class="cursor" x="591" y="130" width="8" height="13" rx="1"/>
+    <!-- TYPEWRITER LOOP -->
+    <text x="20" y="60" class="tagline">
+      <tspan>
+        <animate attributeName="textContent"
+          values="
+          &gt; Rustix;
+          &gt; I Scale Backends;
+          &gt; Building Systems That Scale;
+          &gt; Low Latency. High Throughput;
+          &gt; Rustix
+          "
+          dur="12s"
+          repeatCount="indefinite"/>
+      </tspan>
+    </text>
 
-    <!-- Divider -->
-    <text class="uname" x="20" y="172">anirban@rustix</text>
-    <text class="sep"   x="155" y="172">────────────────────────────────────────────────────────────────────────</text>
+    <!-- USER -->
+    <text class="uname" x="20" y="83">anirban@rustix</text>
+    <text class="sep" x="155" y="83">────────────────────────────────────────────────────────────</text>
 
-    <!-- OS / IDE / Shell -->
-    <text class="key" x="20" y="195">OS:</text>
-    <text class="val" x="840" y="195" text-anchor="end">Windows 11, Arch Linux, Ubuntu</text>
+    <!-- INFO -->
+    <text class="key" x="20" y="105">OS:</text>
+    <text class="val" x="840" y="105" text-anchor="end">Windows 11, Arch Linux, Ubuntu</text>
 
-    <text class="key" x="20" y="215">IDE:</text>
-    <text class="val" x="840" y="215" text-anchor="end">VIM, VS Code, Cursor</text>
+    <text class="key" x="20" y="123">IDE:</text>
+    <text class="val" x="840" y="123" text-anchor="end">VIM, VS Code, Cursor</text>
 
-    <text class="key" x="20" y="235">Shell:</text>
-    <text class="val" x="840" y="235" text-anchor="end">zsh + tmux</text>
+    <text class="key" x="20" y="141">Shell:</text>
+    <text class="val" x="840" y="141" text-anchor="end">zsh + tmux</text>
 
-    <!-- Languages -->
-    <text class="key" x="20" y="262">Languages.<tspan class="key">Programming</tspan>:</text>
-    <text class="val" x="840" y="262" text-anchor="end">Rust, TypeScript, C++</text>
+    <text class="key" x="20" y="165">Languages.<tspan class="key">Programming</tspan>:</text>
+    <text class="val" x="840" y="165" text-anchor="end">Rust, TypeScript, C++</text>
 
-    <text class="key" x="20" y="282">Languages.<tspan class="key">Computer</tspan>:</text>
-    <text class="val" x="840" y="282" text-anchor="end">JSON, LaTeX, YAML, TOML, Regex, PCAP</text>
+    <text class="key" x="20" y="183">Languages.<tspan class="key">Computer</tspan>:</text>
+    <text class="val" x="840" y="183" text-anchor="end">JSON, LaTeX, YAML, TOML, Regex, PCAP</text>
 
-    <!-- Hobbies -->
-    <text class="key" x="20" y="309">Hobbies.<tspan class="key">Software</tspan>:</text>
-    <text class="val" x="840" y="309" text-anchor="end">Quid Pro Quo, Tailgating, ARP Spoofing, DNS Tunneling</text>
+    <text class="key" x="20" y="207">Hobbies.<tspan class="key">Software</tspan>:</text>
+    <text class="val" x="840" y="207" text-anchor="end">Quid Pro Quo, Tailgating, ARP Spoofing, DNS Tunneling</text>
 
-    <text class="key" x="20" y="329">Hobbies.<tspan class="key">Hardware</tspan>:</text>
-    <text class="val" x="840" y="329" text-anchor="end">Wireless Network Auditing, USB Keystroke Injection</text>
+    <text class="key" x="20" y="225">Hobbies.<tspan class="key">Hardware</tspan>:</text>
+    <text class="val" x="840" y="225" text-anchor="end">Wireless Network Auditing, USB Keystroke Injection</text>
 
-    <!-- Contact section -->
-    <text class="section" x="20" y="354">─ Contact ─────────────────────────────────────────────────────────────────────────────────────</text>
+    <text class="section" x="20" y="247">─ Contact ───────────────────────────────────────────────</text>
 
-    <text class="key" x="20" y="376">Email.<tspan class="key">Personal</tspan>:</text>
-    <text class="val" x="840" y="376" text-anchor="end">anirbanbiswas04577@gmail.com</text>
+    <text class="key" x="20" y="267">Email:</text>
+    <text class="val" x="840" y="267" text-anchor="end">anirbanbiswas04577@gmail.com</text>
 
-    <text class="key" x="20" y="396">Email.<tspan class="key">Work</tspan>:</text>
-    <text class="val" x="840" y="396" text-anchor="end">anirban@jurisiq.in</text>
+    <text class="key" x="20" y="285">Email.<tspan class="key">Work</tspan>:</text>
+    <text class="val" x="840" y="285" text-anchor="end">anirban@jurisiq.in</text>
 
-    <text class="key" x="20" y="416">LinkedIn:</text>
-    <text class="val" x="840" y="416" text-anchor="end">Rustix069</text>
+    <text class="key" x="20" y="303">LinkedIn:</text>
+    <text class="val" x="840" y="303" text-anchor="end">Rustix069</text>
 
-    <text class="key" x="20" y="436">Twitter:</text>
-    <text class="val" x="840" y="436" text-anchor="end">Rustix69</text>
+    <text class="key" x="20" y="321">Twitter:</text>
+    <text class="val" x="840" y="321" text-anchor="end">Rustix69</text>
 
-    <text class="key" x="20" y="456">Profile:</text>
-    <text class="val" x="840" y="456" text-anchor="end">www.rustix.in</text>
+    <text class="key" x="20" y="339">Profile:</text>
+    <text class="val" x="840" y="339" text-anchor="end">www.rustix.in</text>
 
-    <!-- Stats section -->
-    <text class="section" x="20" y="478">─ Stats ────────────────────────────────────────────────────────────────────────────────────────</text>
+    <text class="section" x="20" y="361">─ Stats ─────────────────────────────────────────────────</text>
 
-    <text class="key" x="20" y="499">Role:</text>
-    <text class="val" x="840" y="499" text-anchor="end">4x Founding Engineer, AI Startups</text>
+    <text class="key" x="20" y="381">Role:</text>
+    <text class="val" x="840" y="381" text-anchor="end">4x Founding Engineer, AI Startups</text>
 
-    <text class="key" x="20" y="519">Contributed:</text>
-    <text class="val" x="840" y="519" text-anchor="end">Summer of Bitcoin 2025, 2026  |  Codeforces Expert (1700+ Rating)</text>
+    <text class="key" x="20" y="399">Contributed:</text>
+    <text class="val" x="840" y="399" text-anchor="end">Summer of Bitcoin 2025, 2026</text>
+
+    <text class="key" x="20" y="417">Competitive Programming:</text>
+    <text class="val" x="840" y="417" text-anchor="end">Codeforces Expert (1700+ Rating)</text>
 
   </g>
 </svg>
